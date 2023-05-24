@@ -5,7 +5,7 @@ const TaskList = (props) => {
     return (
         <ul
             className="list-group">
-            {listItems.map(e =><TaskListItem key={Math.random()*101-1} value={e} />)}
+            {listItems.map(e =><TaskListItem key={Math.ceil(Math.random()*1000000)} value={e} />)}
         </ul>
     )
 }
