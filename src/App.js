@@ -11,7 +11,7 @@ function App() {
       <AppHeader />
       <div className='Tasks mx-auto'>
         <FirstTask content={firstTask}/>
-        <hr className='border border-success border-5 my-5'/>
+        {/* <hr className='border border-success border-5 my-5'/> */}
         <SecondTask content={secondTask}/>
       </div>
     </div>
