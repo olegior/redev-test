@@ -1,25 +1,18 @@
 import './App.css';
-import FirstComponent from './components/tasks/task-one/first-task'
+import FirstTask from './components/tasks/first-task/first-task'
+import SecondTask from './components/tasks/second-task/second-task';
 import AppHeader from './components/app-common/app-header'
+import {firstTask,secondTask} from './components/data-for-tasks'
+
 
 function App() {
-  const firstTask = {
-    listItems : [
-      'Заголовок 1 уровня', 
-      'Заголовок 2 уровня',
-      'Параграф',
-      'Маркированный список',
-      'Элемент списка'
-  ],
-  title : 'React: Component',
-  description : 'Написать 5 своих компонент, классовых и функциональных. Показать, что ты умеешь их переиспользовать.',
-  text : 'Были использованны:'
-  }
   return (
     <div className="App">
       <AppHeader />
       <div className='Tasks mx-auto'>
-        <FirstComponent content={firstTask}/>
+        <FirstTask content={firstTask}/>
+        <hr className='border border-success border-5 my-5'/>
+        <SecondTask content={secondTask}/>
       </div>
     </div>
   );
