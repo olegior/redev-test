@@ -1,7 +1,7 @@
-import TaskTitle from '../tasks-common/task-title'
-import TaskHeader from '../tasks-common/task-header'
-import TaskDescription from '../tasks-common/task-description'
-import TaskList from '../tasks-common/task-list';
+import TaskTitle from '../TasksCommon/TaskTitle'
+import TaskHeader from '../TasksCommon/TaskHeader'
+import TaskDescription from '../TasksCommon/TaskDescription'
+import TaskList from '../TasksCommon/TaskList';
 
 const FirstTask = (props) => {
     const {title, description, text, listItems} = props.content;

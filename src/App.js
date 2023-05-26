@@ -1,8 +1,8 @@
 import './App.css';
-import FirstTask from './components/tasks/first-task/first-task'
-import SecondTask from './components/tasks/second-task/second-task';
-import AppHeader from './components/app-common/app-header'
-import {firstTask,secondTask} from './components/data-for-tasks'
+import FirstTask from './components/tasks/FirstTask/FirstTask'
+import SecondTask from './components/tasks/SecondTask/SecondTask';
+import AppHeader from './components/AppCommon/AppHeader'
+import {firstTask,secondTask} from './components/DataForTasks'
 
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
       <AppHeader />
       <div className='Tasks mx-auto'>
         <FirstTask content={firstTask}/>
-        {/* <hr className='border border-success border-5 my-5'/> */}
         <SecondTask content={secondTask}/>
       </div>
     </div>

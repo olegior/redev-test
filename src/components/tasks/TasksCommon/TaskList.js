@@ -1,4 +1,4 @@
-import TaskListItem from './task-list-item'
+import TaskListItem from './TaskListItem'
 
 const TaskList = (props) => {
     const { listItems } = props;
